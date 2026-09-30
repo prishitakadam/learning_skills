@@ -1,6 +1,6 @@
 <div align="center">
 
-# learning_skills
+# AI tutors
 
 Reusable Codex skills for learning technical topics through clear, structured guidance.
 
