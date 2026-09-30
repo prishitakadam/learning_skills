@@ -104,10 +104,29 @@ Explain the skill to a human reader. It must include:
 
 ## Installation model
 
-Document two installation methods:
+Document two installation scopes:
 
 1. **User-scoped:** copy the `leetcode-tutor` directory to `~/.codex/skills/leetcode-tutor`.
 2. **Repository-scoped:** copy it to `.codex/skills/leetcode-tutor` in a project.
+
+For each scope, provide both:
+
+- Concise manual installation steps
+- A copy-ready **Ask Codex to install it** prompt
+
+The Codex prompts must name the GitHub source and exact destination, ask Codex to inspect the source before copying, preserve the complete skill directory, validate `SKILL.md`, report what was installed, and request confirmation before replacing an existing installation.
+
+Example user-scoped prompt:
+
+```text
+Install the LeetCode Tutor skill from
+https://github.com/prishitakadam/learning_skills/tree/main/skills/leetcode-tutor
+into my user-scoped Codex skills directory at
+~/.codex/skills/leetcode-tutor.
+
+Inspect the source first, copy the complete skill directory, validate SKILL.md,
+and report the installed files. Ask me before replacing an existing installation.
+```
 
 The repository will not add an installer script, package manager, plugin manifest, or marketplace configuration in this initial version. Those should be added only if repeated manual installation becomes a real problem.
 
@@ -151,7 +170,7 @@ This change will not:
 The design is complete when:
 
 1. A visitor can understand the repository's purpose from the root README.
-2. A visitor can find and install the LeetCode Tutor skill without outside guidance.
+2. A visitor can install the LeetCode Tutor skill manually or by giving Codex a copy-ready installation prompt.
 3. Codex can discover the tutor through `SKILL.md`.
 4. The full teaching behavior is available in `AGENTS.md`.
 5. Each skill has its own human-facing README.
