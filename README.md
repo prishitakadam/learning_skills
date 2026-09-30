@@ -140,6 +140,3 @@ Contributions are welcome when they add a focused, complete learning skill and f
 
 This repository is available under the [MIT License](LICENSE).
 
-## Repository name
-
-The repository remains `learning_skills` for now. If it is renamed later, `codex-learning-skills` is the recommended name; `learning-agent-skills` and `learncraft-skills` are alternatives.
